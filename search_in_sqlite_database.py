@@ -1,7 +1,7 @@
 import sqlite3
 
-terminos_de_busqueda_separados_por_comas = '''g'''
-db_target = 'dbprueba.db'
+terminos_de_busqueda_separados_por_comas = input("Set search terms separated by commas (','): ")
+db_target = input('Set database file path (for example: /home/admin1/Desktop/dbprueba.db): ')
 
 def buscar_en_todas_las_tablas(db_file, termino_busqueda):
     conn = sqlite3.connect(db_file)
